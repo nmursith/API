@@ -1,0 +1,13 @@
+<?php
+
+
+define('ERROR_USERNAME_NOT_FOUND', 100);
+define('ERROR_INVALID_PASSWORD', 101);
+define('SUCCESS_LOGIN', 102);
+
+define('SUCCESS_OPERATION', 200);
+
+
+
+
+
