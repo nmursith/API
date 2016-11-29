@@ -145,7 +145,8 @@ $(document).ready(function() {
     <h3 id="try-it">Demo</h3>
     <div id="paymentSection">
     <form method="post" id="paymentForm">
-          <h4>Payable amount: $10 USD</h4>
+          <h4>Payable amount: </h4>
+        <input type="text" placeholder="MM" maxlength="5" id="amount" name="amount" value="12">
           <ul>
               <input type="hidden" name="card_type" id="card_type" value=""/>
               <li>

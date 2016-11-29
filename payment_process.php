@@ -2,7 +2,7 @@
 require('paypal/PaypalPro.php');
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
-    $payableAmount = 10;
+    $payableAmount = isset($_POST['amount'])? $_POST['amount']: 10;
     $nameArray = explode(' ',$_POST['name_on_card']);
     
     //Buyer information
@@ -41,7 +41,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         //Update order table with tansaction data & return the OrderID
         //SQL query goes here..........
 		
-        $data['orderID'] = '12324';//$OrderID;
+        $data['orderID'] = isset($_POST['orderID'])? $_POST['orderID']: 3234;//$OrderID;
 		//echo $paymentStatus;
     }else{
          $data['status'] = 0;
