@@ -10,13 +10,13 @@
 
 	private $dsn = 'mysql:host=127.0.0.1;dbname=poslanka';
     private $username = 'root';
-    private $password = '123';
-	
+    private $password = '123  ';
+
     private $options = array(
         PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',
-    );		
-	
-	
+    );
+
+
     public function __construct(){
       try{
          $this->_pdo = new PDO($this->dsn, $this->username, $this->password, $this->options);
@@ -158,4 +158,3 @@
   }
 
  ?>
-
