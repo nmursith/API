@@ -39,11 +39,6 @@ app.post('/sms', function (req, res) {
 
       }
   });
-
-
-
-
-
 })
 
 // Tell our app to listen on port 3000
