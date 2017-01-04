@@ -1,0 +1,30 @@
+{
+  "name": "sms",
+  "version": "1.0.0",
+  "description": "Notify Users using SMS",
+  "main": "sms.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "twilio": "^2.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node sms.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmursith/API.git"
+  },
+  "keywords": [
+    "SMS",
+    "Twillio",
+    "express"
+  ],
+  "author": "Nifras",
+  "license": "CSE",
+  "bugs": {
+    "url": "https://github.com/nmursith/API/issues"
+  },
+  "homepage": "https://github.com/nmursith/API#readme"
+}

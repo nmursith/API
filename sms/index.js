@@ -1,5 +1,5 @@
 var http = require('http');
-var mongoose = require('mongoose');
+//var mongoose = require('mongoose');
 var config = require('./config');
 
 // Initialize database connection - throws if database connection can't be

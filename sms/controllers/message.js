@@ -20,7 +20,7 @@ exports.webhook = function(request, response) {
             });
 
             newSubscriber.save(function(err, newSub) {
-                if (err || !newSub) 
+                if (err || !newSub)
                     return respond('We couldn\'t sign you up - try again.');
 
                 // We're signed up but not subscribed - prompt to subscribe
@@ -69,7 +69,7 @@ exports.webhook = function(request, response) {
         }
     }
 
-    // Set Content-Type response header and render XML (TwiML) response in a 
+    // Set Content-Type response header and render XML (TwiML) response in a
     // Jade template - sends a text message back to user
     function respond(message) {
         response.type('text/xml');
